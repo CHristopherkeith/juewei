@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<![endif]-->
+	<meta charset="utf-8">
+	<title>管理员登陆</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="js/placeholder.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var index=new loginObj();
+		});
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="loginlogo">
+			<img src="images/login/logo.jpg">
+		</div>
+		<div class="loginway">
+			<p class="id  wayselect"> 帐号登录</p>
+			<p class="wechat">微信登录</p>
+		</div>
+		<div class="wechatway">
+			<img src="images/login/qrcode.jpg">
+			<p>请您通过微信扫码确定登录</p>
+		</div>
+		<div class="idway dspblock">
+			<input class="idinput" type="text" placeholder="帐号/手机号/QQ号/邮箱" />
+			<input class="pswinput" id="password" type="password" placeholder="密码" />
+			<input class="submit" type="submit" value="登录" />
+			<p class="pswforget">忘记密码，请联系管理员</p>
+			<div class="hint">
+				<p class="hinttitle"><b>提示</b></p>
+				<p class="hintcontain">
+					1.请检查输入大小写是否输入正确。<br>2.请检查您输入的帐号和密码是否匹配。<br>3.若您忘记的是普通帐号，请联系您的管理员修改密码。<br>4.若您忘记的是最高权限帐号，请准备好付款凭证、合同编号、授权码联系绝维科技官方人员寻求帮助。
+				</p>
+			</div>
+		</div>
+		<p class="foot">基于绝维CMS V3.0制作，程序绝维科技版权所有</p>
+	</div>
+</body>
+</html>

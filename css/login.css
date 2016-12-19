@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: SimHei;
+}
+body{
+	background: #F7F5F6;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+
+.main{
+	width: 600px;
+	margin: 0 auto;
+}
+.loginlogo{
+	width: 56.66%;
+	margin:110px auto;
+}
+.loginway{
+	margin: 0px auto 27px auto;
+	width: 43%;
+	overflow: hidden;
+}
+.loginway>p{
+	font-size: 24px;
+	line-height: 24px;
+	color: #989898;
+	float: left;
+	cursor: pointer;
+}
+.loginway>p.wayselect{
+	color: #383838;
+}
+.wechat{
+	margin-left: 13px;
+	border-left: solid 1px #CCCCCC;
+	padding-left: 47px;
+	background: url(../images/login/loginway_1.jpg) no-repeat;
+}
+.wechat.wayselect{
+	background: url(../images/login/loginway.jpg) no-repeat;
+}
+.wechatway{
+	width: 43%;
+	height: 317px;
+	margin: 0 auto;
+}
+.idway{
+	width: 70%;
+	height: 298px;
+	margin: 0px auto 0px auto;
+	padding-top: 19px;
+	position: relative;
+}
+.wechatway,.idway{
+	display: none;
+}
+.wechatway.dspblock,.idway.dspblock{
+	display: block;
+}
+.wechatway p,.idway p{
+	width: 100%;
+	text-align: center;
+	color: #545253;
+	font-size: 17px;
+	line-height: 56px;
+}
+.idinput,.pswinput,#password1{
+	width: 416px;
+	height: 43px;
+	line-height: 47px;
+	margin-bottom: 13px;
+	outline: none;
+	font-size: 19px;
+	border: solid 2px #CCCCCC;
+	color: #ABA9AB;
+}
+.submit{
+	width: 95%;
+	height: 48px;
+	outline: none;
+	border:none;
+	background: url(../images/login/submitbg.jpg) no-repeat;
+	color: #FFFFFF;
+	line-height: 48px;
+	font-size: 22px;
+	text-align: center;
+	margin: 21px auto 53px auto;
+	display: block;
+	cursor: pointer;
+}
+.foot{
+	line-height: 263px;
+	font-size: 17px;
+	text-align: center;
+	color: #A3A1A2;
+
+}
+.hint{
+	position: absolute;
+	left: 50%;
+	width: 388px;
+	height: 138px;
+	background: url(../images/login/hint.jpg) no-repeat;
+	display: none;
+	z-index: 999;
+}
+p.hinttitle{
+	font-size: 17px;
+	line-height: 32px;
+	padding-left: 28px;
+	text-align: left;
+}
+p.hintcontain{
+	font-size: 14px;
+	line-height: 19px;
+	padding: 0px 14px;
+	text-align: left;
+	width: auto;
+	font-family: Microsoft YaHei;
+}

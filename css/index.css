@@ -1,0 +1,936 @@
+/*index*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Microsoft YaHei;
+}
+a,b{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+body{
+	position: relative;
+}
+.dspblock{
+	display: block !important;
+}
+.contentwidth{
+	width: 1100px;
+	margin: 0 auto;
+}
+.top{
+	width: 100%;
+	background: #535353;
+}
+.topcontent{
+	height: 26px;
+	background: #535353;
+	position: relative;
+}
+.langselect{
+	position: absolute;
+	top: 26px;
+	right: 0px;
+	width: 88px;
+	padding-right:2px;
+	list-style-type: none;
+	background: #EDEDED;
+	display: none;
+}
+.langselect li a{
+	line-height: 26px;
+	font-size: 15px;
+	color: #535353;
+	cursor: pointer;
+}
+.langselect li:hover{
+	text-decoration: underline;
+}
+.topcontent>a{
+	float: right;
+	margin-left: 11px;
+	height: 100%;
+	line-height: 26px;
+	color: #FFFFFF;
+	font-size: 15px;
+}
+.language{
+	width: 88px;
+	padding-right: 2px;
+}
+.online:hover,.language:hover,.query:hover,.report:hover,.topmap:hover,.topahover{
+	background: #EDEDED;
+	color: #535353 !important;
+	border-bottom: solid 1px #535353;
+}
+a.qq,a.online{
+	float: left;
+	line-height: 26px;
+}
+a.qq{
+	font-family: none;
+	font-size: 16px;
+	color: #DCDCDC;
+	width: 76px;
+	padding-left: 22px;
+	background: url(../images/qq.jpg) no-repeat;
+}
+.nav{
+	height: 32px;
+	padding: 27px 0px 32px 0px;
+}
+.nav a{
+	margin-left: 38px;
+	height: 100%;
+	font-size: 17px;
+	line-height: 32px;
+	color: #606060;
+	float: right;
+}
+.nav a:hover,a.select{
+	color: #5FB3E2;
+	font-weight: bold;
+}
+.logo{
+	height: 100%;
+	width: 154px;
+	float: left;
+	background: url(../images/logo.jpg) no-repeat;
+}
+a.cost{
+	width: 115px;
+	color: #FFFFFF;
+	background: url(../images/cost.jpg) no-repeat;
+}
+a.cost:hover{
+	color: #FFFFFF;
+}
+.bannerwarp{
+	background: url(../images/banner.jpg) center center no-repeat;
+}
+.cpbannerwarp{
+	background: url(../images/casepage/cpbanner.jpg) center center no-repeat;
+}
+.banner{
+	height: 400px;
+	margin: 0 auto;
+	background: url(../images/banner.jpg) center center no-repeat;
+}
+.cpbanner{
+	height: 276px;
+	margin: 0 auto;
+	background: url(../images/casepage/cpbanner.jpg) center center no-repeat;
+}
+.slogan{
+	width: 100%;
+	line-height: 118px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 30px;
+}
+.case .slogan{
+	line-height: 104px;
+}
+.service{
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+	height: 280px;
+}
+div[class^="sv"]{
+	cursor: pointer;
+	color: #FFFFFF;
+}
+div[class^="sv"].select{
+	color: #000000;
+	background: #FFFFFF;
+}
+div[class^="sv"].select .svdscrp,div[class^="sv"].select .svslogan{
+	color: #A0A0A0;
+}
+
+.service>div{
+	width: 217px;
+	height: 280px;
+	margin-left: 3px;
+	position: absolute;
+}
+.service>div[class^="contact"]{
+	width: 216px;
+	margin-left: 0px;
+	padding-left: 3px;
+	border-left: solid 1px #DBDBDB;
+}
+.service>div[class^="contact"]{
+	background: url(../images/contact.jpg) no-repeat;
+	
+	display: none;
+}
+.svwebsite{
+	background: #69B3D8;
+	left: 0px;
+}
+.svwebsite span{
+	background: url(../images/website.jpg) no-repeat;
+}
+.svwebsite.select span{
+	background: url(../images/website_1.jpg) no-repeat;
+}
+.svwechat{
+	background: #6DCB37;
+	left: 220px;
+}
+.svwechat span{
+	background: url(../images/wechat.jpg) no-repeat;
+}
+.svwechat.select span{
+	background: url(../images/wechat_1.jpg) no-repeat;
+}
+.svsystem{
+	background: #13C0CE;
+	left: 440px;
+}
+.svsystem span{
+	background: url(../images/system.jpg) no-repeat;
+}
+.svsystem.select span{
+	background: url(../images/system_1.jpg) no-repeat;
+}
+.svbrand{
+	background:#A0A0A0;
+	left: 660px;
+}
+.svbrand span{
+	background: url(../images/brand.jpg) no-repeat;
+}
+.svbrand.select span{
+	background: url(../images/brand_1.jpg) no-repeat;
+}
+.contactwebsite{
+	left: 220px;
+}
+.contactwechat{
+	left: 440px;
+}
+.contactsystem{
+	left: 660px;
+}
+.contactbrand{
+	left: 880px;
+}
+.service span{
+	display: block;
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.svtitle,.svdscrp,.svslogan{
+	width: 100%;
+}
+.svtitle{
+	margin: 24px 0px 5px 0px;
+	font-size: 20px;	
+}
+.svdscrp,.svslogan{
+	text-align: center;
+	font-size: 12px;
+}
+
+.svslogan{
+	position: absolute;
+	top: 214px;
+}
+div[class^="contact"] p{
+	margin-top: 145px;
+	font-size: 12px;
+	line-height: 17px;
+	color: #000000;
+}
+div[class^="contact"] a{
+	position: absolute;
+	top: 240px;
+	right: 5px;
+	font-size: 13px;
+	color: #1880DF;
+	font-weight: bolder;
+	font-family: SimHei;
+}
+.casewrap{
+	width: 100%;
+	background: #F8F8F8;
+}
+.case{
+	background: #F8F8F8;
+}
+.switchbt{
+	margin: 0px 40px;
+	padding: 0px 70px;
+	border-bottom: solid 1px #DADADA;
+	overflow: hidden;
+}
+.switchbt>div{
+	width: 25%;
+	float: left;
+}
+.switchbt>div span{
+	width: 65px;
+	height: 65px;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+}
+.swwebsite{
+	background: url(../images/case1.jpg) no-repeat;
+}
+.swwebsite.swselect{
+	background: url(../images/case1_1.jpg) no-repeat;
+}
+.swwechat{
+	background: url(../images/case2.jpg) no-repeat;
+}
+.swwechat.swselect{
+	background: url(../images/case2_1.jpg) no-repeat;
+}
+.swsystem{
+	background: url(../images/case3.jpg) no-repeat;
+}
+.swsystem.swselect{
+	background: url(../images/case3_1.jpg) no-repeat;
+}
+.swbrand{
+	background: url(../images/case4.jpg) no-repeat;
+}
+.swbrand.swselect{
+	background: url(../images/case4_1.jpg) no-repeat;
+}
+.showwrap{
+	padding: 40px 0px 8px 0px;
+}
+.cpshowwrap{
+	padding-bottom: 36px;
+}
+.certificatewrap{
+	overflow: hidden;
+}
+.certificatewrap .showwrap{
+	padding: 10px 0px 40px 0px;
+}
+.case .showwrap>div,.cpshowwrap>div{
+	padding-bottom: 32px;
+}
+div[class$="show"]{
+	overflow: hidden;	
+}
+.case .showwrap>div,.cpshowwrap>div{
+	display: none;
+}
+
+.showwrap>div.swwebsiteshow,.cpshowwrap>div.cpwebsiteshow{
+	display: block;
+}
+div[class$="show"]>div{
+	width: 260px;
+	margin: 0px 9px;
+	float: left;
+}
+div[class$="show"] h4{
+	border-left: solid 3px #40A5EB;
+	padding-left: 7px;
+	font-size: 17px;
+	line-height: 19px;
+	color: #323230;
+	margin: 19px 0px;	
+	letter-spacing: 1px;
+}
+div[class$="show"] p{
+	font-size: 12px;
+	line-height: 16px;
+	color: #898989;
+	letter-spacing: 1px;
+}
+div[class$="show"]>div:first-child{
+	margin-left: 3px;
+}
+div[class$="show"]>div.last{
+	margin-right: 3px;
+}
+div.certificateshow{
+	position: relative;
+	height: 204px;
+	overflow: visible;
+	float: left;
+	width: 1375px;
+}
+div.certificateshow div{
+	margin: 0px 8px 0px 7px !important;	
+	float: left;
+}
+.show1{
+	left: 0px;
+}
+.show2{
+	left: 275px;
+}
+.show3{
+	left: 550px;
+}
+.show4{
+	left: 825px;
+}
+.show5{
+	left: 1100px;
+}
+div[class$="show"] img,.viewimg img,.bottomwrap>div img,.map img{
+	width: 100%;
+	height: auto;
+}
+.certificatewrap .slogan{
+	line-height: 90px;
+}
+.viewwarp{
+	width: 100%;
+	background: #F8F8F8;
+}
+.view{
+	background: #F8F8F8;
+}
+.view .slogan{
+	line-height: 105px;
+}
+.viewcontain{
+	padding: 0px 5px 45px 5px;
+	overflow: hidden;
+}
+.viewcontain div[class$="view"]{
+	width: 280px;
+	float: left;
+}
+.viewcontain div.otherview{
+	width: 250px;
+}
+.viewtitle{
+	font-size: 21px;
+	font-weight: bold;
+	color: #3199CC;
+	text-align: left;
+	width: 100%;
+	line-height: 49px;
+	border-bottom: solid 1px #DCDCDC;
+}
+.viewimg{
+	padding: 25px 30px 25px 0px;
+	height: 100px;
+}
+.otherview .viewimg{
+	padding-right: 0px;
+}
+div[class$="view"] ul{
+	list-style-type: square;
+}
+div[class$="view"] ul li{
+	font-size: 16px;
+	line-height: 25px;
+	text-align: left;
+	margin-left: 16px;
+	color: #3c3c3c;
+}
+.bottomwrap{
+	padding-bottom: 40px;
+	overflow: hidden;
+}
+.bottomwrap>div{
+	width: 130px;
+	margin-left: 64px;
+	float: left;
+}
+.bottomwrap>div:first-child{
+	margin-left: 0px;
+}
+.bottomwrap>div p{
+	text-align: center;
+	font-size: 13px;
+	line-height: 16px;
+}
+.footwrap{
+	width: 100%;
+	background: #535353;
+
+}
+.foot{
+	background: #535353;
+	position: relative;
+}
+.qrcode{
+	position: absolute;
+	right: 0px;
+	top: 26px;
+	height: 32px;
+	line-height: 32px;
+	width: 130px;
+	background: url(../images/qrcode.jpg) no-repeat;
+	padding-top: 130px;
+	font-size: 14px;
+	color: #DCDCDC;
+	text-align: center;
+
+}
+.footcontain{
+	padding: 40px 5px 90px 5px;
+}
+.footcontain p,.footcontain a{	
+	text-align: left;
+	overflow: hidden;
+}
+.about a{
+	color: #FFFFFF;
+	font-size: 15px;
+	line-height: 38px;
+	width: 82px;
+	float: left;
+}
+.adress,.tel,.record{
+	font-size: 14px;
+	line-height: 28px;
+	color: #DCDCDC;
+}
+.adress span{
+	font-size: 15px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.tel span,.record span{
+	display: block;
+	margin-right: 16px;
+	float: left;
+}
+.record span:first-child{
+	padding-left: 19px;
+	background: url(../images/record3.jpg) no-repeat;
+}
+.sitebottomwarp{
+	width: 100%;
+	background: #4C5B62;
+	position: fixed;	
+	bottom: 0;
+	left: 0;
+	overflow: hidden;	
+}
+
+.bottomcontain{
+	overflow: hidden;
+	float: left;
+	width: 1078px;
+
+}
+.sitebottom{
+	background: #4C5B62;
+	overflow: hidden;
+	padding: 5px 0px;
+	position: relative;
+	left: 0;
+}
+.bottomtitle{
+	padding-left: 15px;
+	line-height: 25px;
+	font-size: 16px;
+	float: left;
+	width: 16%;
+	color: #FFFFFF;
+	text-align: left;
+	letter-spacing: 2px;
+}
+.bottomitem{
+	padding: 0px 10px;
+	width: 22.54%;
+	border-right: solid 1px #23282B;
+	float: left;
+}
+.bottomitem>div{
+	background: url(../images/marketing.jpg) no-repeat;
+	background-size: contain;
+	padding-top: 37px;
+	width: 25%;
+	height: 13px;
+	float: left;
+}
+.bottomitem>div span{
+	line-height: 16px;
+	font-size: 10px;
+	-webkit-transform:scale(0.8);
+	display:block;
+	text-align: center;
+	color: #FFFFFF
+}
+.sitebottom input{
+	margin: 10px 0px 10px 20px;
+	width: 21%;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	display: block;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+.sitebottom input.get{
+	margin: 5px 0px 5px 15px;
+	width: 8%;
+	height: 40px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	color: #4C5B62;
+	background: url(../images/get.jpg) no-repeat;
+	
+}
+.arrow{
+	float: right;
+	width: 22px;
+	height: 50px;
+	background: url(../images/arrow.jpg) no-repeat;
+	cursor: pointer;
+	
+	position: absolute;
+	top: 5px;
+	
+	right: 0px;
+}
+.mapwrap{
+	display: none;
+}
+.mapshader{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.5;
+	filter:Alpha(opacity=50);
+	top: 0;
+	left: 0;
+}
+.map{
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;	
+	width: 756px;
+	height: 416px;
+}
+.map img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 0;
+	height: 0;
+	display: block;
+}
+.mapclose{
+	display: none;
+	position: absolute;
+	top: 11px;
+	right: 9px;
+	width: 35px;
+	height: 35px;
+	background: url(../images/mapclose.jpg) no-repeat;
+	cursor: pointer;
+}
+
+/*casepage*/
+.cpcase{
+	margin-top: 40px;
+	overflow: hidden;
+}
+.cpcasetitle{
+	width: 471px;
+	margin: 0 auto;
+	margin-bottom: 40px;	
+	overflow: hidden;
+}
+.cpcasetitle>b,.cpcasetitle>span{
+	float: left;
+}
+.cpcasetitle>b{
+	width: 117px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 17px;
+	color: #A1A1A1;
+	cursor: pointer;
+}
+.cpcasetitle>b.cpselect{
+	color: #0783CB;
+}
+.cpcasetitle>span{
+	width: 1px;
+	height: 18px;
+	display: block;
+	background: url(../images/casepage/dashline.jpg) no-repeat;
+}
+.caseselect{
+	margin-bottom: 47px;
+	overflow: hidden;
+}
+.caseselect>div{
+	margin-bottom: 7px;
+	overflow: hidden;
+}
+.caseselect>div>p,.caseselect>div>span{
+	float: left;
+	padding:0px 11px;
+	font-size: 15px;
+	line-height: 24px;
+	position: relative;
+}
+.caseselect>div>p{
+	cursor: pointer;
+}
+.caseselect>div>span{
+	font-size: 16px;
+	line-height: 23px;
+}
+.caseselect>div>p.csselect{
+	color: #FFFFFF;
+	background: url(../images/casepage/selectbgm.jpg) repeat-x;
+}
+p.csselect span{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	width: 6px;
+	height: 24px;
+	background: url(../images/casepage/selectbgr.jpg) no-repeat;
+}
+p.csselect span:first-child{
+	left: 0;
+	background: url(../images/casepage/selectbgl.jpg) no-repeat;
+}
+.cstitle{
+	display: block;
+}
+.pagenumber{
+	margin-bottom: 62px;
+	text-align: center;
+}
+.pagenumber>p,.pagenumber>span{
+	display: inline-block;
+	color: #666668;
+}
+.pagenumber>span{
+	vertical-align: bottom;
+}
+.pagenumber>p{
+	font-size: 13px;
+	line-height: 24px;
+	padding: 0px 17px;
+	margin: 0px 4px;
+	background: url(../images/casepage/pagenoslm.jpg) repeat-x;
+	position: relative;
+	cursor: pointer;
+}
+.pagenumber>p span{
+	position: absolute;
+	right: 0;
+	width: 4px;
+	height: 24px;
+	background: url(../images/casepage/pagenoslr.jpg) no-repeat;
+}
+.pagenumber>p span:first-child{
+	left: 0;
+	background: url(../images/casepage/pagenosll.jpg) no-repeat;
+}
+
+p.pnselect{
+	color: #FFFFFF;
+	background: url(../images/casepage/pagenom.jpg) repeat-x;
+}
+p.pnselect span{
+	background: url(../images/casepage/pagenor.jpg) no-repeat;
+}
+p.pnselect span:first-child{
+	background: url(../images/casepage/pagenol.jpg) no-repeat;
+}
+.ifowarap{
+	width: 100%;
+	background: #F7F7F7;
+}
+.ifo{
+	background: #F7F7F7;
+	padding: 33px 0px;
+}
+.ifo .slogan{
+	line-height: 43px;
+	margin-bottom: 67px;
+}
+.ifocontain{
+	padding-left: 8px;
+	overflow: hidden;
+}
+.ifocontain>div{
+	float: left;
+}
+.ifoproblem{
+	width: 460px;
+}
+.ifoproblem>div{
+	float: left;
+	margin-bottom: 18px;
+	width: 230px;
+	height: 157px;
+}
+.ifoproblem>div p{
+	padding-top: 105px;
+	font-size: 18px;
+	text-align: center;
+	color: #393939;
+}
+.ipbtitle,.ipstitle{
+	font-size: 22px;
+	line-height: 22px;
+	margin-bottom: 32px;
+	color: #393939;
+}
+.ipstitle,input[class^="ifo"]{
+	margin-bottom: 25px;
+}
+.pbwebsite{
+	background: url(../images/casepage/pbwebsitebg.jpg) no-repeat;
+}
+.pbwebsite:hover{
+	background: url(../images/casepage/pbwebsitebg_1.jpg) no-repeat;
+}
+.pbwechat{
+	background: url(../images/casepage/pbwechatbg.jpg) no-repeat;
+}
+.pbwechat:hover{
+	background: url(../images/casepage/pbwechatbg_1.jpg) no-repeat;
+}
+.ifopersonal{
+	margin-left: 105px;
+}
+.ifopersonal input{
+	border: none;
+	outline: none;
+}
+input[class^="ifo"]{
+	display: block;
+	width: 385px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 18px;
+	background: url(../images/casepage/ifoinputbg.jpg) no-repeat;
+}
+.ifopersonal form{
+	overflow: hidden;
+}
+.ifopersonal form.position{
+	position: relative;
+	margin-top: 10px;
+
+}
+.ifopersonal form.ifosubmit{
+	margin-top: 43px;
+}
+.ifopersonal span[class^="radio"]{
+	width: 15px;
+	height: 15px;	
+	background: url(../images/casepage/radiobg.jpg) no-repeat;
+	position: absolute;
+	top: 4px;	
+
+}
+span[class^="radio"].psselect{
+	background: url(../images/casepage/radiobgcheck.jpg) no-repeat;
+}
+.ifopersonal span.ifooption{
+	margin: 0px 15px 0px 6px;
+	font-size: 18px;
+	line-height: 18px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+.ifopersonal input[type="radio"]{
+	opacity: 0;
+	filter:Alpha(opacity=0);
+	width: 15px;
+	height: 15px;
+	position: relative;
+	top: 2px;
+}
+.ifopersonal input[type="submit"]{
+	width: 164px;
+	height: 38px;
+	margin-right: 30px;
+	font-size: 19px;
+	line-height: 38px;
+	text-align: center;
+	color: #FFFFFF;
+	background: url(../images/casepage/submitbg.jpg) no-repeat;
+	cursor: pointer;
+}
+
+/********************media***************************/
+/*@media(max-width: 1100px){*/
+@media(max-device-width: 1100px){
+	.contentwidth{
+		width: 1000px;
+	}
+	.service>div{
+		width: 197px;
+		height: 280px;
+		margin-left: 3px;
+		position: absolute;
+	}
+	.service>div[class^="contact"]{
+		width: 196px;
+		margin-left: 0px;
+		padding-left: 3px;
+		border-left: solid 1px #DBDBDB;
+	}
+	.svwechat,.contactwebsite{
+		left: 200px;
+	}
+	.svsystem,.contactwechat{
+		left: 400px;
+	}
+	.svbrand,.contactsystem{
+		left: 600px;
+	}
+	.contactbrand{
+		left: 800px;
+	}
+	div[class$="show"]>div{
+		width: 235px;
+	}
+	.viewcontain div[class$="view"]{
+		width: 255px;
+	}
+	.viewcontain div.otherview{
+		width: 225px;
+	}
+	.bottomwrap>div{
+		margin-left: 44px;
+	}
+	.bottomcontain{
+		width: 978px;
+	}
+	.bottomtitle{
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	.caseselect>div>p,.caseselect>div>span{
+		padding:0px 8px;
+	}
+}
